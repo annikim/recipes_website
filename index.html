@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trader Joe's Veggie Recipes</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+<!--lottie files-->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<!--jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type = "text/javascript" src="script.js"></script>
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Archivo+Narrow&family=Geologica:wght@200&display=swap');
+  </style>
+
+
+</head>
+
+<body>
+
+  <header id="maintitle">
+   Trader Joe's Recipes for Herbivores
+  </header>
+
+     <div class="hempseedcaption">
+     <p>Explore over 60+ vegetarian recipes, all with Trader Joe's ingredients!<br>
+        Scroll and click on any image to go to the recipe~</p>
+      <p>Sprinkle hemp seeds before eating for extra nutrition and protein! On <strong>EVERYTHING!</strong></p>
+      </div>
+
+<!--Favorites---------------------------------------------------->
+
+<div class="herbisection">
+    <img src="result-2.png" id="herbi">
+     <button onclick="location.href='favorites.html';" 
+ id="favoritesheaderbutton">FAVORITES</button>
+ </div>
+
+
+<!--anchor links------------------------------------->
+<section class="anchorsection">
+<p class="anchorheader"><strong>Are you feeling...</strong></p>
+<div class="anchorlinks">
+<ul>
+ <li> <a href="#pizzaheader">Some 'Za?</a> </li>
+  <br>
+ <li> <a href="#grilledsandwichesheader">Sammies with a Twist?</a></li>
+  <br>
+  <li> <a href="#breakfastheader">Breakfast for Lunch?</a></li>
+  <br>
+  <li> <a href="#mexicanheader">Mexican Fusion?</a></li>
+  <br>
+  <li><a href="#pastaheader"> Classic Italian?</a></li>
+  <br>
+  <li><a href="#asianheader">Asian Dishes?</a></li>
+  <br>
+  <li><a href="#middleeasternheader">Middle Eastern Cuisine?</a></li>
+</ul>
+</div>
+</section>
+
+<br><br>
+
+<!--BACK TO THE TOP BUTTON------------------------------>
+<button id="backToTopBtn">BACK TO TOP</button>
+
+<!--recipe images and links-->
+<!--PIZZA SECTION---------------------------------------------------->
+<section class="container reveal">
+
+  <div class="pizzas">
+
+      <div class="strike">
+        <img src="sleepingdino-2.png" id="sleepingdinoimg">
+        <span>
+    <h2 id="pizzaheader">PIZZA</h2>
+          </span>
+      </div>
+
+  <div class="row">
+
+   <!--image-->
+      <div class="container" id="item1">
+        <div class="grid-item">
+        <a href="https://www.thekitchn.com/recipe-saag-paneer-pizza-230117" target="_blank">
+          <img
+            src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_center,w_730,h_913/k%2Farchive%2F02fb9e5e7cf763506cb18d4185c22f5f37651fe3"
+            class="image" /></a>
+          <div class="caption" id="title">
+            Saag Paneer Pizza
+              <br>
+              <input type="checkbox" name="checkbox" id="favorite1" class="favorite"  onclick="addToFavorites(item1)">
+              <label for="favorite1">&#9829;</label>
+        </div>
+       </div>
+      </div>
+ 
+  <!-- <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/49646666-0a46-42a3-97ec-6059bf8fe446/kanbZ8Uok3.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>-->
+   
+  <!--image-->
+      <div class="container" id="item2">
+       <div class="grid-item">
+        <a href="https://www.thekitchn.com/trader-joes-flatbread-pizza-recipe-265839" target="_blank">
+          <img
+            src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_center,w_730,h_913/k%2Farchive%2F0518d1a8ef47becda110547f8fcf359da7607e68"
+            class="image" /></a>
+          <div class="caption">
+            Naan Flatbread Veggie Pizza
+            <br>
+            <input type="checkbox" name="checkbox" id="favorite2" class="favorite"  onclick="addToFavorites(item2)">
+            <label for="favorite2">&#9829;</label>
+        </div>
+        </div>  
+       </div>
+
+
+ <!--image-->
+      <div class="container" id="item3">
+        <div class="grid-item">
+        <a href="https://www.thekitchn.com/trader-joes-flatbread-pizza-264597" target="_blank">
+          <img
+            src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_center,w_730,h_913/k%2Farchive%2F7d8074b56089dbbe2e9f360fa44d0c1d5aee0447"
+            class="image" /></a>
+          <div class="caption">
+            4 ingredient Artichoke Pesto Flatbread Pizza
+            <br>
+            <input type="checkbox" id="favorite3" class="favorite"   onclick="addToFavorites(item3)">
+            <label for="favorite3">&#9829;</label>
+
+          </div>
+          </div>
+              </div>
+
+
+    <!--image-->
+    <div class="container" id="item4">
+        <div class="grid-item">
+      <a href="https://www.traderjoes.com/home/recipes/calabrian-chili-double-cheese-pizza" target="_blank">
+        <img
+          src="https://www.traderjoes.com/content/dam/trjo/context-images/75600-calabrain-chili-pasta-sauce-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+          class="image" /></a>
+        <div class="caption">
+          Calabrian Chili and Double Cheese Pizza
+          <br>
+          <input type="checkbox" id="favorite4" class="favorite"  onclick="addToFavorites(item4)">
+          <label for="favorite4">&#9829;</label>
+      </div>
+      </div>
+    </div>
+
+    
+  </div>  
+  </div>
+
+<!--GRILLED SANDWICHES------------------------------------>
+<section class= "container reveal">
+<div class="grilled">
+  
+  
+  <div class="strike">
+    <span>
+        <h2 id="grilledsandwichesheader">GRILLED SANDWICHES</h2>
+    </span>
+  </div>
+
+  <div class="row">
+    <!--image-->
+    <div class="container" id="item5">
+        <div class="grid-item">
+      <a href="https://www.traderjoes.com/home/recipes/sweet-spicy-pimento-grilled-cheese" target="_blank">
+        <img
+          src="https://www.traderjoes.com/content/dam/trjo/editorial-main-images/321-eat-recipes/321-eat_sweet-spicy-pimento-grilled-cheese-v2.jpg/jcr:content/renditions/webp-1280.webp"
+          class="image" /></a>
+        <div class="caption">
+          Sweet&Spicy Pimento Grilled Cheese
+          <br>
+          <input type="checkbox" id="favorite5" class="favorite"   onclick="addToFavorites(item5)">
+          <label for="favorite5">&#9829;</label>
+      </div>
+      </div>
+    </div>
+
+
+    <!--image-->
+    <div class="container" id="item6">
+      <div class="grid-item">
+      <a href="https://www.traderjoes.com/home/recipes/grilled-veggie-muenster-melt" target="_blank">
+        <img
+          src="https://www.traderjoes.com/content/dam/trjo/context-images/73329-sliced-meunster-cheese-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+          class="image" /></a>
+        <div class="caption">
+          Grilled Veggie Muenster Melt
+          <br>
+          <input type="checkbox" id="favorite6" class="favorite"   onclick="addToFavorites(item6)">
+          <label for="favorite6">&#9829;</label>
+      </div>
+      </div>
+    </div> 
+
+
+    <!--image-->
+    <div class="container" id="item7">
+      <div class="grid-item">
+      <a href="https://www.traderjoes.com/home/recipes/grilled-caprese-on-cauliflower-crust" target="_blank">
+        <img
+          src="https://www.traderjoes.com/content/dam/trjo/recipes/416MainImage.jpg/jcr:content/renditions/webp-1280.webp"
+          class="image" /></a>
+        <div class="caption">
+          Grilled Caprese on Cauliflower Crust
+          <br>
+          <input type="checkbox" id="favorite7" class="favorite"   onclick="addToFavorites(item7)">
+          <label for="favorite7">&#9829;</label>       
+        </div>
+      </div>
+    </div>
+    
+
+    <!--image-->
+    <div class="container" id="item8">
+      <div class="grid-item">
+      <a href="https://www.traderjoes.com/home/recipes/grilled-kim-cheese" target="_blank">
+        <img
+          src="https://www.traderjoes.com/content/dam/trjo/context-images/60932-org-mayo-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+          class="image" /></a>
+        <div class="caption">
+          Grilled Kim-cheese
+          <br>
+          <input type="checkbox" id="favorite8" class="favorite"  onclick="addToFavorites(item8)">
+          <label for="favorite8">&#9829;</label>       
+        </div>
+       </div>
+    </div>
+
+
+    <!--image-->
+      <div class="container" id="item9">
+        <div class="grid-item">
+        <a href="https://www.traderjoes.com/home/recipes/vegan-bbq-jackfruit-sammies" target="_blank">
+          <img
+            src="https://www.traderjoes.com/content/dam/trjo/context-images/65580-pulled-jackfruit-bbq-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+            class="image" /></a>
+          <div class="caption">
+            BBQ Jackfruit Sammich
+            <br>
+            <input type="checkbox" id="favorite9" class="favorite"   onclick="addToFavorites(item9)">
+            <label for="favorite9">&#9829;</label>          
+          
+          </div>
+        </div>
+      </div>
+
+       <!--image-->
+    <div class="container" id="item10">
+      <div class="grid-item">
+       <a href="https://www.traderjoes.com/home/products/pdp/quinoa-cowboy-veggie-burgers-053276" target="_blank">
+         <img
+           src="https://www.traderjoes.com/content/dam/trjo/context-images/53276-Quinoa-Cowboy-Veggie-Burger-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+           class="image" /></a>
+         <div class="caption">
+          Quinoa Cowboy Veggie Burgers
+           <br>
+           <input type="checkbox" id="favorite10" class="favorite"   onclick="addToFavorites(item10)">
+           <label for="favorite10">&#9829;</label>
+       </div>
+       </div>  
+      </div>
+
+       <!--image-->
+    <div class="container" id="item11">
+      <div class="grid-item">
+      <a href="https://www.thekitchn.com/trader-joes-grilled-cheese-recipe-23199783" target="_blank">
+        <img
+          src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_center,w_730,h_913/k%2FPhoto%2FSeries%2F2021-08-snapshot-tj-dinners%2FSnapshot_3-ingredient-Veg-TJs-Dinners_Ultimate-Grilled-Cheese%2F2021-07-28_ATK-8239"
+          class="image" /></a>
+        <div class="caption">
+          Ultimate Grilled Cheese
+          <br>
+          <input type="checkbox" id="favorite11" class="favorite"   onclick="addToFavorites(item11)">
+          <label for="favorite11">&#9829;</label>
+        </div>
+      </div>
+    </div>
+
+    <!--image-->
+    <div class="container" id="item12">
+      <div class="grid-item">
+       <a href="https://sweetsimplevegan.com/vegan-chicken-pesto-sandwich-lazy-trader-joes-meal/" target="_blank">
+         <img
+           src="veganchickenpestosammie.png"
+           class="image" /></a>
+         <div class="caption">
+          Vegan Chicken Pesto Sandwich
+           <br>
+           <input type="checkbox" id="favorite12" class="favorite"   onclick="addToFavorites(item12)">
+           <label for="favorite12">&#9829;</label>
+       </div>
+       </div>  
+      </div>
+
+     
+  </div>
+</div>
+</section>
+
+<!--BREAKFAST---------------------------------------------------->
+<section class="container reveal">
+  
+  <div class="strike">
+    <span>
+  <h2 id="breakfastheader">BREAKFAST</h2>
+      </span>
+    </div>
+
+<div class="breakfast">
+
+<div class="row">
+
+  <!--image-->
+  <div class="container" id="item13">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/recipes/soy-chorizo-breakfast-sandwich" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/editorial-main-images/10-dollar-recipes-to-feed-four/Soy%20Chorizo%20Breakfast%20Sandwich%20-%20website.jpg/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Soy Chorizo Breakfast Sandwich
+        <br>
+        <input type="checkbox" id="favorite13" class="favorite"   onclick="addToFavorites(item13)">
+        <label for="favorite13">&#9829;</label>      
+      </div>
+      </div>
+  </div>
+
+
+  <!--image-->
+  <div class="container" id="item14">
+    <div class="grid-item">
+    <a href="https://myeverydaytable.com/4-easy-trader-joes-meals/" target="_blank">
+      <img
+        src="https://myeverydaytable.com/wp-content/uploads/easytraderjoesrecipes1-768x384.jpg"
+        class="image" /></a>
+      <div class="caption">
+       Country Potatoes with Eggs
+        <br>
+        <input type="checkbox" id="favorite14" class="favorite"   onclick="addToFavorites(item14)">
+        <label for="favorite14">&#9829;</label>      
+      </div>
+      </div>
+  </div>
+
+  <!--image-->
+  <div class="container" id="item15">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/recipes/vegan-breakfast-tacos" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/context-images/70711-Tofu-Scramble-Soy-Chorizo.jpg/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+       Vegan Breakfast Tacos
+       <br>
+       <input type="checkbox" id="favorite15" class="favorite"   onclick="addToFavorites(item15)">
+       <label for="favorite15">&#9829;</label>      
+      </div>
+      </div>
+  </div>
+
+  
+  <!--image-->
+  <div class="container" id="item16">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/recipes/vegan-banana-bread-waffles" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/context-images/63483-vegan-banana-bread-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Vegan Banana Bread Waffles
+        <br>
+        <input type="checkbox" id="favorite16" class="favorite"   onclick="addToFavorites(item16)">
+        <label for="favorite16">&#9829;</label>      
+      </div>
+      </div>
+  </div>
+  
+
+  <!--image-->
+  <div class="container" id="item17">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/recipes/blueberry-protein-pancakes" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/recipes/blueberry-protein-pancakes.jpg/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Blueberry Protein Pancakes
+        <br>
+        <input type="checkbox" id="favorite17" class="favorite"   onclick="addToFavorites(item17)">
+        <label for="favorite17">&#9829;</label>     
+       </div>
+      </div>
+  </div>
+
+
+  <!--image-->
+  <div class="container" id="item18">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/recipes/veggie-chickpea-hash" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/context-images/60205-greek-chickpeas-2-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Veggie Chickpea Hash
+        <br>
+        <input type="checkbox" id="favorite18" class="favorite"   onclick="addToFavorites(item18)">
+        <label for="favorite18">&#9829;</label>
+            </div>
+    </div>
+  </div>
+
+
+   <!--image-->
+   <div class="container" id="item19">
+    <div class="grid-item">
+    <a href="https://theeverygirl.com/vegetarian-trader-joes-recipes/" target="_blank">
+      <img
+        src="https://media.theeverygirl.com/wp-content/uploads/2021/07/simple-vegetarian-trader-joes-meals-the-everygirl-3.jpg"
+        class="image" /></a>
+      <div class="caption">
+        Hashbrown Breakfast Sandwich
+        <br>
+        <input type="checkbox" id="favorite19" class="favorite"   onclick="addToFavorites(item19)">
+        <label for="favorite19">&#9829;</label>
+      </div>
+      </div>
+  </div>
+
+
+  <!--image-->
+  <div class="container" id="item20">
+    <div class="grid-item">
+    <a href="https://www.thekitchn.com/soy-chorizo-breakfast-tacos-22977602" target="_blank">
+      <img
+        src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_center,w_730,h_913/k%2FPhoto%2FRecipes%2F2020-01-Soyrizo-breakfast-taco%2F2020_alternativemeats_soyrizotacos2_030"
+        class="image" /></a>
+      <div class="caption">
+        Soy Chorizo Breakfast Tacos
+        <br>
+        <input type="checkbox" id="favorite20" class="favorite"   onclick="addToFavorites(item20)">
+        <label for="favorite20">&#9829;</label>
+            </div>
+      </div>
+    </div>
+
+
+  <!--image-->
+  <div class="container" id="item21">
+    <div class="grid-item">
+    <a href="https://theeverygirl.com/vegetarian-trader-joes-recipes/" target="_blank">
+      <img
+        src="https://media.theeverygirl.com/wp-content/uploads/2021/07/simple-vegetarian-trader-joes-meals-the-everygirl-2.jpg"
+        class="image" /></a>
+      <div class="caption">
+        Oats with Agave
+        <br>
+        <input type="checkbox" id="favorite21" class="favorite"   onclick="addToFavorites(item21)">
+        <label for="favorite21">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+    <!--image-->
+    <div class="container" id="item22">
+      <div class="grid-item">
+      <a href="https://www.thepennyhoarder.com/save-money/trader-joes-vegetarian-recipes/" target="_blank">
+        <img
+          src="https://www.traderjoes.com/content/dam/trjo/context-images/59583-PB-protein-granola-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+          class="image" /></a>
+        <div class="caption">
+          Protein-packed Yogurt Parfait
+          <br>
+          <input type="checkbox" id="favorite22" class="favorite"   onclick="addToFavorites(item22)">
+          <label for="favorite22">&#9829;</label>
+        </div>
+        </div>
+    </div>
+
+</div>
+</div>
+</section>
+
+
+<!--Mexican------------------------------------------------------------->  
+<section class="container reveal">
+<div class="mexican">
+ 
+  <div class="strike">
+    <span>
+  <h2 id="mexicanheader">MEXICAN</h2>
+      </span>
+    </div>
+
+<div class="row">
+
+
+  <!--image-->
+  <div class="container" id="item23">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/recipes/beefless-burritos" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/recipes/beefless-burrito.jpg/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Beefless Burritos
+        <br>
+        <input type="checkbox" id="favorite23" class="favorite"   onclick="addToFavorites(item23)">
+        <label for="favorite23">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+  <!--image-->
+  <div class="container" id="item24">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/recipes/beefless-tacos" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/recipes/veggie-taco-meat.jpg/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Beefless Tacos
+        <br>
+        <input type="checkbox" id="favorite24" class="favorite"  onclick="addToFavorites(item24)">
+        <label for="favorite24">&#9829;</label> 
+        </div>
+      </div>
+  </div>
+  
+
+  <!--image-->
+    <div class="container" id="item25">
+      <div class="grid-item">
+      <a href="https://www.traderjoes.com/home/recipes/dutch-oven-veggie-enchiladas" target="_blank">
+        <img
+          src="https://www.traderjoes.com/content/dam/trjo/context-images/28965-enchilada-sauce-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+          class="image" /></a>
+        <div class="caption">
+          Dutch Oven Veggie Enchiladas
+          <br>
+          <input type="checkbox" id="favorite25" class="favorite"   onclick="addToFavorites(item25)">
+          <label for="favorite25">&#9829;</label> 
+        </div>
+        </div>
+    </div>
+
+
+  <!--image-->
+  <div class="container" id="item26">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/products/pdp/065291" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/context-images/Appetizer-Air-Fry-Hack-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Black Bean and Cheese Taquitos
+        <br>
+        <input type="checkbox" id="favorite26" class="favorite"   onclick="addToFavorites(item26)">
+        <label for="favorite26">&#9829;</label>
+      </div>
+      </div>
+  </div>
+
+  <!--image-->
+  <div class="container" id="item27">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/recipes/squash-tacos" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/context-images/93595-ff-refried-beans-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Squash Tacos
+        <br>
+        <input type="checkbox" id="favorite27" class="favorite"   onclick="addToFavorites(item27)">
+        <label for="favorite27">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+  <!--image-->
+  <div class="container" id="item28">
+    <div class="grid-item">
+    <a href="https://vegnews.com/taste-tests/easy-vegan-meals-trader-joes" target="_blank">
+      <img
+        src="https://vegnews.com/media/W1siZiIsIjQyODMzL1ZlZ05ld3MudmVnYW5lbmNoaWxhZGFjYXNzZXJvbGUudHJhZGVyam9lcy5wbmciXSxbInAiLCJvcHRpbWl6ZSJdXQ/VegNews.veganenchiladacasserole.traderjoes.png?sha=4c2e952f44550ce8"
+        class="image" /></a>
+      <div class="caption">
+        Ready-to-Eat Vegan Enchilada Casserole
+        <br>
+        <input type="checkbox" id="favorite28" class="favorite"   onclick="addToFavorites(item28)">
+        <label for="favorite28">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+  <div class="container" id="item29">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/products/pdp/061365" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/products/m20602/61365.png/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Chipotle Veggie Quesadillas
+        <br>
+        <input type="checkbox" id="favorite29" class="favorite"  onclick="addToFavorites(item29)">
+        <label for="favorite29">&#9829;</label>   
+         </div>
+      </div>
+  </div>
+
+
+      <!--image-->
+      <div class="container" id="item30">
+        <div class="grid-item">
+        <a href="https://www.thekitchn.com/butternut-squash-and-broccolini-rice-bowl-with-soy-chorizo-265014"
+          target="_blank">
+          <img
+            src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_center,w_730,h_913/k%2Farchive%2Fc9623740503ec444ac5f44f70299eca9a70d4bcc"
+            class="image" /></a>
+          <div class="caption">
+            Butternut Squash and Broccolini Rice Bowl with Soy Chorizo
+            <br>
+            <input type="checkbox" id="favorite30" class="favorite"  onclick="addToFavorites(item30)">
+            <label for="favorite30">&#9829;</label>
+                    </div>
+          </div>
+      </div>
+  
+<!--image-->
+<div class="container" id="item31">
+  <div class="grid-item">
+  <a href="https://myeverydaytable.com/trader-joes-vegetarian-chili-nachos/" target="_blank">
+    <img
+      src="https://myeverydaytable.com/wp-content/uploads/trader-joes-vegetarian-chili-nacho-3-683x1024.jpg"
+      class="image" /></a>
+    <div class="caption">
+      Vegetarian Chili Nachos
+      <br>
+      <input type="checkbox" id="favorite31" class="favorite"   onclick="addToFavorites(item31)">
+      <label for="favorite31">&#9829;</label>
+    </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+
+
+<!---PASTA---------------------------------------------------------->
+<section class="container reveal">
+<div class="pasta">
+
+  <div class="strike">
+    <span>
+  <h2 id="pastaheader">PASTA</h2>
+      </span>
+    </div>
+
+  <!--image-->
+  <div class="row">
+
+  <!--image-->
+  <div class="container" id="item32">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/recipes/full-of-fusilli-veggie-soup" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/context-images/72525-organic-fuscilli-corti-bucati-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Fusili Veggie Soup
+        <br>
+        <input type="checkbox" id="favorite32" class="favorite"  onclick="addToFavorites(item32)">
+        <label for="favorite32">&#9829;</label>
+      </div>
+      </div>
+  </div>
+
+  <!--image-->
+  <div class="container" id="33"   onclick="addToFavorites(item33)">
+    <div class="grid-item">
+    <a href="https://vegnews.com/taste-tests/easy-vegan-meals-trader-joes" target="_blank">
+      <img
+        src="https://vegnews.com/media/W1siZiIsIjQyODQxL1ZlZ05ld3MudmVnYW5ib2xvZ25lc2VyYXZpb2xpLnRyYWRlcmpvZXMucG5nIl0sWyJwIiwib3B0aW1pemUiXV0/VegNews.veganbologneseravioli.traderjoes.png?sha=669c0faa65324bba"
+        class="image" /></a>
+      <div class="caption">
+        Ready-to-Eat Vegan Italian Bolognese Ravioli
+        <br>
+        <input type="checkbox" id="favorite33" class="favorite"  onclick="addToFavorites(item33)">
+        <label for="favorite33">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+  <!--image-->
+  <div class="container" id="item34">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/recipes/vegan-spinach-artichoke-pasta" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/context-images/58259-red-lentil-sedanini-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Spinach Artichoke Pasta
+        <br>
+        <input type="checkbox" id="favorite34" class="favorite"  onclick="addToFavorites(item34)">
+        <label for="favorite34">&#9829;</label>
+      </div>
+    </div>
+  </div>
+
+  <!--image-->
+  <div class="container" id="item35">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/products/pdp/061364" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/products/m20602/61364.png/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Gluten-free Mac and Cheese
+        <br>
+        <input type="checkbox" id="favorite35" class="favorite"  onclick="addToFavorites(item35)">
+        <label for="favorite35">&#9829;</label>
+      </div>
+      </div>
+  </div>
+
+      <div class="container" id="item36">
+        <div class="grid-item">
+          <a href="https://www.itsthelazyvegetarian.com/2023/05/21/meatless-ground-vegetarian-osso-bucco/" target="_blank">
+            <img
+              src="ossobuscoveggie.png"
+              class="image" /></a>
+            <div class="caption">
+              Vegetarian Osso Busco
+              <br>
+              <input type="checkbox" id="favorite36" class="favorite"  onclick="addToFavorites(item36)">
+              <label for="favorite36">&#9829;</label>    
+                    </div>
+            </div>
+        </div>
+
+         <!--image-->
+    <div class="container" id="item37">
+      <div class="grid-item">
+       <a href="https://www.itsthelazyvegetarian.com/2023/07/08/trader-joes-tortellini-soup/" target="_blank">
+         <img
+           src="tortellinisoup.png"
+           class="image" /></a>
+         <div class="caption">
+          30 minute Tortellini Soup
+           <br>
+           <input type="checkbox" id="favorite37" class="favorite"  onclick="addToFavorites(item37)">
+           <label for="favorite37">&#9829;</label>
+       </div>
+       </div>  
+      </div>
+  
+  <div class="container" id="item38">
+    <div class="grid-item">
+      <a href="https://theeverygirl.com/vegetarian-trader-joes-recipes/" target="_blank">
+        <img
+          src="https://media.theeverygirl.com/wp-content/uploads/2021/07/simple-vegetarian-trader-joes-meals-the-everygirl-5.jpg"
+          class="image" /></a>
+        <div class="caption">
+          Pesto Cauliflower Gnocchi
+          <br>
+          <input type="checkbox" id="favorite38" class="favorite"  onclick="addToFavorites(item38)">
+          <label for="favorite38">&#9829;</label>
+                </div>
+        </div>
+    </div>
+  
+  <!--image-->
+  <div class="container" id="item39">
+    <div class="grid-item">
+    <a href="https://www.plantpoweredlivin.com/8-tasty-throw-together-meals-from-trader-joes/" target="_blank">
+      <img
+        src="https://www.plantpoweredlivin.com/wp-content/uploads/2023/07/easytraderjoesveganmeals-pestoravioli-768x1024.jpg"
+        class="image" /></a>
+      <div class="caption">
+        Pesto Ravioli
+        <br>
+        <input type="checkbox" id="favorite39" class="favorite"  onclick="addToFavorites(item39)">
+        <label for="favorite39">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+ 
+  
+</div>
+</div>
+</section>
+
+
+<!--ASIAN----------------------------------------->
+<section class="container reveal">
+<div class="asian">
+  
+  <div class="strike">
+    <span>
+  <h2 id="asianheader">ASIAN</h2>
+      </span>
+    </div>
+
+<div class="row">
+      <!--image-->
+      <div class="container" id="item40">
+        <div class="grid-item">
+        <a href="https://www.traderjoes.com/home/recipes/truffley-cauliflower-stir-fry" target="_blank">
+          <img
+            src="https://www.traderjoes.com/content/dam/trjo/context-images/74811-truffley-soy-sauce-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+            class="image" /></a>
+          <div class="caption">
+            Truffley Cauliflower Stir Fry
+            <br>
+            <input type="checkbox" id="favorite40" class="favorite"  onclick="addToFavorites(item40)">
+            <label for="favorite40">&#9829;</label>
+                    </div>
+          </div>
+      </div>
+
+  <!--image-->
+  <div class="container" id="item41">
+    <div class="grid-item">
+    <a href="https://vegnews.com/taste-tests/easy-vegan-meals-trader-joes" target="_blank">
+      <img
+        src="https://vegnews.com/media/W1siZiIsIjQyODI4L1ZlZ05ld3Mua2ltYmFwdHJhZGVyam9lcy50cmFkZXJqb2VzLnBuZyJdLFsicCIsIm9wdGltaXplIl1d/VegNews.kimbaptraderjoes.traderjoes.png?sha=b296517c64e24a3c"
+        class="image" /></a>
+      <div class="caption">
+        Ready-to-Eat Kimbap
+        <br>
+        <input type="checkbox" id="favorite41" class="favorite"  onclick="addToFavorites(item41)">
+        <label for="favorite41">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+
+  <!--image-->
+  <div class="container" id="item42">
+    <div class="grid-item">
+    <a href="https://vegnews.com/taste-tests/easy-vegan-meals-trader-joes" target="_blank">
+      <img
+        src="https://vegnews.com/media/W1siZiIsIjQyODMwL1ZlZ05ld3MudmVnYW5wb2tlLnRyYWRlcmpvZXMucG5nIl0sWyJwIiwib3B0aW1pemUiXV0/VegNews.veganpoke.traderjoes.png?sha=d268e77e2b6b7494"
+        class="image" /></a>
+      <div class="caption">
+        Ready-to-Eat Vegan Poke
+        <br>
+        <input type="checkbox" id="favorite42" class="favorite"  onclick="addToFavorites(item42)">
+        <label for="favorite42">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+  <!--image-->
+  <div class="container" id="item43">
+    <div class="grid-item">
+    <a href="https://vegnews.com/taste-tests/easy-vegan-meals-trader-joes" target="_blank">
+      <img
+        src="https://vegnews.com/media/W1siZiIsIjQyODMxL1ZlZ05ld3MudmVnYW5jaGlja2VuLnRyYWRlcmpvZXMucG5nIl0sWyJwIiwib3B0aW1pemUiXV0/VegNews.veganchicken.traderjoes.png?sha=02003a8c14c4849e"
+        class="image" /></a>
+      <div class="caption">
+        Ready-to-Eat Chickenless Mandarin Orange Morsels
+        <br>
+        <input type="checkbox" id="favorite43" class="favorite"   onclick="addToFavorites(item43)">
+        <label for="favorite43">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+  <!--image-->
+  <div class="container" id="item44">
+    <div class="grid-item">
+    <a href="https://vegnews.com/taste-tests/easy-vegan-meals-trader-joes" target="_blank">
+      <img
+        src="https://vegnews.com/media/W1siZiIsIjQyODUwL1ZlZ05ld3Mua29yZWFuYnVsZ29naS50cmFkZXJqb2VzLnBuZyJdLFsicCIsIm9wdGltaXplIl1d/VegNews.koreanbulgogi.traderjoes.png?sha=19e1ff14677d7b2b"
+        class="image" /></a>
+      <div class="caption">
+        Ready-to-Eat Korean Beefless Bulgogi
+        <br>
+        <input type="checkbox" id="favorite44" class="favorite"   onclick="addToFavorites(item44)">
+        <label for="favorite44">&#9829;</label>
+       </div>
+      </div>
+  </div>
+
+
+  <!--image-->
+  <div class="container" id="item45">
+    <div class="grid-item">
+    <a href="https://vegnews.com/taste-tests/easy-vegan-meals-trader-joes" target="_blank">
+      <img
+        src="https://vegnews.com/media/W1siZiIsIjQyODM2L1ZlZ05ld3MudmVncGFkdGhhaS50cmFkZXJqb2VzLnBuZyJdLFsicCIsIm9wdGltaXplIl1d/VegNews.vegpadthai.traderjoes.png?sha=5a6bfa1ff548568d"
+        class="image" /></a>
+      <div class="caption">
+        Ready-to-Eat Veggie Pad Thai
+        <br>
+        <input type="checkbox" id="favorite45" class="favorite"  onclick="addToFavorites(item45)">
+        <label for="favorite45">&#9829;</label>
+      </div>
+      </div>
+  </div>
+
+  <!--image-->
+  <div class="container" id="item46">
+    <div class="grid-item">
+    <a href="https://vegnews.com/taste-tests/easy-vegan-meals-trader-joes" target="_blank">
+      <img
+        src="https://vegnews.com/media/W1siZiIsIjQyODM4L1ZlZ05ld3MudGhhaXZlZ2V0YWJsZWd5b3phLnRyYWRlcmpvZXMucG5nIl0sWyJwIiwib3B0aW1pemUiXV0/VegNews.thaivegetablegyoza.traderjoes.png?sha=9adac43e90fca2e4"
+        class="image" /></a>
+      <div class="caption">
+        Ready-to-Eat Thai Veggie Gyoza
+        <br>
+        <input type="checkbox" id="favorite46" class="favorite"  onclick="addToFavorites(item46)">
+        <label for="favorite46">&#9829;</label>
+      </div>
+      </div>
+  </div>
+
+  <!--image-->
+  <div class="container" id="item47">
+    <div class="grid-item">
+    <a href="https://vegnews.com/taste-tests/easy-vegan-meals-trader-joes" target="_blank">
+      <img
+        src="https://vegnews.com/media/W1siZiIsIjQyODM0L1ZlZ05ld3MudmVnYW5zcHJpbmdyb2xscy50cmFkZXJqb2VzLnBuZyJdLFsicCIsIm9wdGltaXplIl1d/VegNews.veganspringrolls.traderjoes.png?sha=5091a2e7f0f4004b"
+        class="image" /></a>
+      <div class="caption">
+        Ready-to-Eat Veggie Spring Rolls
+        <br>
+        <input type="checkbox" id="favorite47" class="favorite"  onclick="addToFavorites(item47)">
+        <label for="favorite47">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+  <!--image-->
+  <div class="container" id="item48">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/recipes/korean-inspired-cold-noodles" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/context-images/74565-gochujang-sauce-korean-cold-noodles-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Korean-inspired Cold Noodles
+        <br>
+        <input type="checkbox" id="favorite48" class="favorite"  onclick="addToFavorites(item47)">
+        <label for="favorite48">&#9829;</label>     
+       </div>
+      </div>
+  </div>
+
+
+
+  <!--image-->
+  <div class="container" id="item49">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/recipes/stir-fried-rice-cakes" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/context-images/74566-korean-rice-cakes-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Stir-Fried Rice Cakes
+        <br>
+        <input type="checkbox" id="favorite49" class="favorite"  onclick="addToFavorites(item49)">
+        <label for="favorite49">&#9829;</label>
+      </div>
+      </div>
+  </div>
+
+  <!--image-->
+  <div class="container" id="item50">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/recipes/veggie-biryani-burritos" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/editorial-main-images/321-eat-recipes/321-eat_veggie-biryani-burritos.jpg/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Veggie Biryani Burritos
+        <br>
+        <input type="checkbox" id="favorite50" class="favorite"  onclick="addToFavorites(item50)">
+        <label for="favorite50">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+   <!--image-->
+   <div class="container" id="item51">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/products/pdp/vegetable-biryani-with-vegetable-dumplings-051530" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/products/m20602/51530.png/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Ready-made Veggie Biryani with Dumplings
+        <br>
+        <input type="checkbox" id="favorite51" class="favorite"  onclick="addToFavorites(item51)">
+        <label for="favorite51">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+
+  <!--image-->
+  <div class="container" id="item52">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/recipes/fridge-foraged-fried-rice" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/recipes/fridge-foraged-fried-rice.jpg/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Fridge Foraged Fried Rice
+        <br>
+        <input type="checkbox" id="favorite52" class="favorite"   onclick="addToFavorites(item52)">
+        <label for="favorite52">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+ <!--image-->
+ <div class="container" id="item53">
+  <div class="grid-item">
+  <a href="https://www.traderjoes.com/home/products/pdp/vegetable-fried-rice-052148" target="_blank">
+    <img
+      src="https://www.traderjoes.com/content/dam/trjo/context-images/52148-vegetable-fried-rice-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+      class="image" /></a>
+    <div class="caption">
+      Ready-Made Fried Rice
+      <br>
+      <input type="checkbox" id="favorite53" class="favorite"  onclick="addToFavorites(item53)">
+      <label for="favorite53">&#9829;</label>
+        </div>
+    </div>
+</div>
+
+  <!--image-->
+  <div class="container" id="item54">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/recipes/channa-masala-tomato-soup" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/recipes/channa-masala-tomato-soup.jpg/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Channa Masala Tomato Soup
+        <br>
+        <input type="checkbox" id="favorite54" class="favorite"  onclick="addToFavorites(item54)">
+        <label for="favorite54">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+
+  <!--image-->
+  <div class="container" id="item55">
+    <div class="grid-item">
+    <a href="https://www.traderjoes.com/home/products/pdp/tteok-bok-ki-071551" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/context-images/71551-Tteok-Bok-Ki-Spicy-Rice-Cakes-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Tteokbokki (add egg for protein)
+        <br>
+        <input type="checkbox" id="favorite55" class="favorite"  onclick="addToFavorites(item55)">
+        <label for="favorite55">&#9829;</label>   
+       </div>
+      </div>
+  </div>
+
+
+  <!--image-->
+  <div class="container" id="item56">
+    <div class = "grid-item">
+    <a href="https://www.traderjoes.com/home/products/pdp/061404" target="_blank">
+      <img
+        src="https://www.traderjoes.com/content/dam/trjo/context-images/61403-61404-indian-meals-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+        class="image" /></a>
+      <div class="caption">
+        Yellow Tadka Dal
+        <br>
+        <input type="checkbox" id="favorite56" class="favorite"  onclick="addToFavorites(item56)">
+        <label for="favorite56">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+
+  <!--image-->
+    <div class="container" id="item57">
+      <div class="grid-item">
+      <a href="https://www.traderjoes.com/home/products/pdp/061534" target="_blank">
+        <img
+          src="https://www.traderjoes.com/content/dam/trjo/context-images/61534-vegetable-samosas.jpg/jcr:content/renditions/webp-1280.webp"
+          class="image" /></a>
+        <div class="caption">
+          Veggie Samosas
+          <br>
+          <input type="checkbox" id="favorite57" class="favorite"  onclick="addToFavorites(item57)">
+          <label for="favorite57">&#9829;</label>
+                </div>
+        </div>
+    </div>
+
+
+    <!--image-->
+  <div class="container" id="item58">
+
+    <div class="grid-item">
+    <a href="https://myeverydaytable.com/trader-joes-tikka-masala-lentils-recipe/" target="_blank">
+      <img
+        src="https://myeverydaytable.com/wp-content/uploads/Trader-Joes-Tikka-Masala-Lentils-Recipe-4.jpg"
+        class="image" /></a>
+      <div class="caption">
+        Tikka Masala Lentils 
+        <br>
+        <input type="checkbox" id="favorite58" class="favorite"  onclick="addToFavorites(item58)">
+        <label for="favorite58">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+    <!--image-->
+  <div class="container" id="item59">
+    <div class="grid-item">
+    <a href="https://www.plantpoweredlivin.com/8-tasty-throw-together-meals-from-trader-joes/" target="_blank">
+      <img
+        src="https://www.plantpoweredlivin.com/wp-content/uploads/2021/01/estytraderjoesveganmeals-platedcabbagenoodles-768x1024.jpg"
+        class="image" /></a>
+      <div class="caption">
+        Chili Onion Cabbage Noodles
+        <br>
+        <input type="checkbox" id="favorite59" class="favorite"  onclick="addToFavorites(item59)">
+        <label for="favorite59">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+   <!--image-->
+   <div class="container" id="item60">
+    <div class="grid-item">
+    <a href="https://www.itsthelazyvegetarian.com/2023/05/13/red-curry-udon-noodle-bowl/" target="_blank">
+      <img
+        src="redcurryudon.png"
+        class="image" /></a>
+      <div class="caption">
+        Red Curry Udon Noodle Bowl
+        <br>
+        <input type="checkbox" id="favorite60" class="favorite"  onclick="addToFavorites(item60)">
+        <label for="favorite60">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+    <!--image-->
+  <div class="container" id="item61">
+    <div class="grid-item">
+    <a href="https://www.plantpoweredlivin.com/8-tasty-throw-together-meals-from-trader-joes/" target="_blank">
+      <img src="https://www.plantpoweredlivin.com/wp-content/uploads/2020/10/IMG_4059-2-871x1024.jpg"
+        class="image" /></a>
+      <div class="caption">
+        Veggie Ramen
+        <br>
+        <input type="checkbox" id="favorite61" class="favorite"  onclick="addToFavorites(item61)">
+        <label for="favorite61">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+
+    <!--image-->
+  <div class="container" id="item62">
+
+    <div class="grid-item">
+    <a href="https://theeverygirl.com/vegetarian-trader-joes-recipes/" target="_blank">
+      <img
+        src="https://media.theeverygirl.com/wp-content/uploads/2021/07/simple-vegetarian-trader-joes-meals-the-everygirl-4.jpg"
+        class="image" /></a>
+      <div class="caption">
+        Veggie Fried Rice with Gyoza
+        <br>
+        <input type="checkbox" id="favorite62" class="favorite"  onclick="addToFavorites(item62)">
+        <label for="favorite62">&#9829;</label>
+            </div>
+      </div>
+  </div>
+
+
+</div>
+</div>
+</section>
+
+<!--Middle Eastern-------------------------------------->
+<section class="container reveal">
+<div class="middleeastern">
+ 
+  <div class="strike">
+    <span>
+  <h2 id="middleeasternheader">MIDDLE EASTERN</h2>
+      </span>
+    </div>
+
+
+<div class="row">
+
+      <!--image-->
+      <div class="container" id="item63">
+        <div class="grid-item">
+        <a href="https://www.traderjoes.com/home/recipes/falafel-waffles" target="_blank">
+          <img
+            src="https://www.traderjoes.com/content/dam/trjo/recipes/falafel-waffles.jpg/jcr:content/renditions/webp-1280.webp"
+            class="image" /></a>
+          <div class="caption">
+            Falafel Waffle
+            <br>
+            <input type="checkbox" id="favorite63" class="favorite"  onclick="addToFavorites(item63)">
+            <label for="favorite64">&#9829;></label>
+              </div>
+          </div>
+      </div>
+
+  
+      <!--image-->
+      <div class="container" id="item64">
+        <div class="grid-item">
+        <a href="https://www.traderjoes.com/home/recipes/harvest-pilaf" target="_blank">
+          <img
+            src="https://www.traderjoes.com/content/dam/trjo/context-images/26621-dried-cranberries-pdp.jpg/jcr:content/renditions/webp-1280.webp"
+            class="image" /></a>
+          <div class="caption">
+            Harvest Pilaf
+            <br>
+            <input type="checkbox" id="favorite64" class="favorite"  onclick="addToFavorites(item64)">
+            <label for="favorite64">&#9829;></label>
+                    </div>
+          </div>
+      </div>
+
+       <!--image-->
+       <div class="container" id="item65">
+        <div class="grid-item">
+        <a href="https://myeverydaytable.com/4-easy-trader-joes-meals/" target="_blank">
+          <img
+            src="https://myeverydaytable.com/wp-content/uploads/easytraderjoesrecipes2-768x384.jpg"
+            class="image" /></a>
+          <div class="caption">
+            Falafel Sandwiches
+            <br>
+            <input type="checkbox" id="favorite65" class="favorite"  onclick="addToFavorites(item65)">
+            <label for="favorite65">&#9829;</label>
+              </div>
+          </div>
+      </div>
+
+
+             <!--image-->
+             <div class="container" id="item66">
+
+              <div class="grid-item">
+              <a href="https://myeverydaytable.com/trader-joes-farro-grain-bowl-recipe/" target="_blank">
+                <img
+                  src="https://myeverydaytable.com/wp-content/uploads/farro-bowl-2-768x875.jpg"
+                  class="image" /></a>
+                <div class="caption">
+                    Farro Grain Bowl
+                  <br>
+                  <input type="checkbox" id="favorite66" class="favorite"  onclick="addToFavorites(item66)">
+                  <label for="favorite66">&#9829;</label>
+                    </div>
+                </div>
+            </div>
+
+       <!--image-->
+       <div class="container" id="item67">
+
+        <div class="grid-item">
+        <a href="https://www.thekitchn.com/buffalo-cauliflower-bowl-267487" target="_blank">
+          <img
+            src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_center,w_730,h_913/k%2Farchive%2Fa52877542ee38fcf70088cf2916c1f530c4d005e"
+            class="image" /></a>
+          <div class="caption">
+            Spicy Buffalo Cauliflower Bowls with Avocado and Green Tahini
+            <br>
+            <input type="checkbox" id="favorite67" class="favorite"  onclick="addToFavorites(item67)">
+            <label for="favorite67">&#9829;</label>
+              </div>
+          </div>
+      </div>
+
+      <!--image-->
+      <div class="container" id="item68">
+        <div class="grid-item">
+        <a href="https://theeverygirl.com/vegetarian-trader-joes-recipes/" target="_blank">
+          <img
+            src="https://media.theeverygirl.com/wp-content/uploads/2021/07/simple-vegetarian-trader-joes-meals-the-everygirl-1.jpg"
+            class="image" /></a>
+          <div class="caption">
+            Veggie Falafel on Pita
+            <br>
+            <input type="checkbox" id="favorite68" class="favorite"  onclick="addToFavorites(item68)">
+            <label for="favorite68">&#9829;</label>
+             </div>
+          </div>
+      </div>
+
+      
+</div>
+</div>
+</section>
+
+<br><br>
+
+
+</body>
+</html>

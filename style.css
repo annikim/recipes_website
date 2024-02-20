@@ -1,0 +1,396 @@
+html {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: rgba(181, 216, 111, 0.76);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/*rgb(230, 229, 229) , rgba(181, 216, 111, 0.76)*/
+
+@font-face 
+{
+  font-family: lato;
+  src: url('Lato-Light.ttf') format("truetype");
+}
+
+@font-face{
+  font-family: alegreyareg;
+  src:url('Alegreya/Alegreya-VariableFont_wght.ttf')
+}
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+}
+
+
+#maintitle{
+  font-size: 50px;
+  font-family: 'Alegreya', serif;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/**************************************************/
+
+p {
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 15px;
+  font-family: alegreyareg;
+}
+
+/*recipe page css*/
+.image {
+  display: block;
+  width: 75%;
+  height: auto;
+}
+
+.caption{
+  font-family: alegreyareg;
+  color: black;
+  font-size: 18px; 
+  text-align: center;
+}
+
+h2{
+  color: black;
+  font-size: 29px;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+}
+
+/*all the header stylings***********************************************/
+.strike {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap; 
+}
+
+.strike > span {
+  position: relative;
+  display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  width: 9999px;
+  height: 1px;
+  border-top: 6px solid #7CB518;
+}
+
+.strike > span:before {
+  right: 100%;
+}
+
+.strike > span:after {
+  left: 100%;
+}
+
+/**sleepy dino on pizza header************************************************/
+#dinocontainer{
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  padding: 0;
+}
+
+
+#sleepingdinoimg{
+    width: 100%;
+    max-width: 69px;
+    height: auto;
+    float: left;
+    display: block;
+    margin-right: auto;
+    position: absolute;
+    top: 740px;
+    left: 100px;
+    z-index: 1;
+}
+
+
+/*anchor links styling*******************************************/
+.anchorsection{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column; 
+}
+
+
+.anchorheader{
+  font-size: 25px;
+ 
+}
+
+.anchorlinks a{
+  font-family: alegreyareg;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  border-bottom: 2px solid transparent; /* Add an initially transparent underline */
+  transition: color 0.3s ease-in-out, border-bottom-color 0.3s ease-in-out; /* Smooth transitions on color and underline on hover */
+  padding-bottom: 2px; /* Adjust the distance between text and underline */
+  margin-bottom: 15px;
+}
+
+.anchorlinks{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.anchorlinks a::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  transition: width 0.3s ease-in-out;
+}
+
+.anchorlinks a:hover{
+  color: #19654dd8;
+  border-bottom-color: #19654dd8; /* Change the underline color on hover */
+  transition: 0.3s ease-in-out; /* Smooth width transition on hover */
+  cursor: pointer;
+}
+
+.anchorlinks a:hover::before{
+  width: 100%;
+}
+
+ul{
+  position: relative;
+  list-style-position: inside;
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+li{
+  display: inline-block;
+}
+
+
+/*back to top button***********************************************/
+
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 1;
+  background-color: yellowgreen;
+  color: black;
+  border: 2px solid black; 
+  padding: 0.8% 0.8%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Merriweather', serif;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/*arrow animation */
+
+#backToTopBtn::before {
+  content: '\2191'; /* Unicode character for an arrow pointing up */
+  display: inline-block;
+  font-size: 17px; /*making the arrow bigger*/
+  margin-right: 8px; /* Adjust spacing between text and arrow */
+  transition: transform 0.4s ease-in-out;
+}
+
+#backToTopBtn:hover::before {
+  transform: translateY(-4px); /* Move the arrow up a bit on hover */
+}
+
+
+/*reveal effect*********************************************/
+
+/*
+.reveal
+{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active
+{
+  transform: translateY(0);
+  opacity: 1;
+}
+*/
+
+/*image grid******************************************************/
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.caption {
+  padding: 15px;
+  background-color: #f6e8dbda;
+  text-align: center;
+}
+
+
+.container{
+  margin-bottom: 20px;
+}
+
+/* go to favorites button****************************************************/
+.herbisection{
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  position: relative;
+  right: 3%;
+}
+
+#herbi{
+  width: 100%;
+  max-width: 58px;
+  height: auto;
+  float: right;
+  display: block;
+  margin-left: auto;
+  position: absolute;
+  top: 0;
+  right: 3%;
+  z-index: 1;
+}
+
+#favoritesheaderbutton{
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 15%;
+  left: 90%;
+  padding: 3px;
+  margin-top: 29px;
+  background-color: #6c9d16d9;
+  color: black;
+  border: 2px solid black; 
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; 
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Alegreya', serif;
+  max-width: 104px;
+}
+
+/*249d77bb */
+
+#favoritesheaderbutton:hover{ 
+  background-color: yellowgreen; 
+  transform: skew(2deg, 2deg);
+}
+
+
+/*The actual favorites button on each recipe***********************************/
+.favorite {
+  display: none; /* Hide the checkboxes */
+}
+
+/* Heart icon styling */
+.favorite + label {
+  cursor: pointer;
+  color: rgb(153, 151, 151); /* Default color */
+  font-size: 25px;
+}
+
+.favorite:checked + label {
+  color: red; /* Red color when checked */
+}
+
+/*back button*************************************************/
+
+#backbutton{
+  float: left;
+  margin-left: 30px;
+  margin-top: 100px;
+  background-color: #249d77bb;
+  color: black;
+  border: 2px solid black; 
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; 
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'Alegreya', serif;
+  width: 160px
+}
+
+#backbutton:hover{ 
+  background-color: yellowgreen; 
+  transform: skew(2deg, 2deg);
+}
+
+
+#recipefavoriteheader {
+  font-size: 45px;
+  font-family: 'Alegreya', serif;
+  text-align: center;
+  justify-content: center !important;
+  color: black;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+#favorites-container{
+  justify-content: center;
+  margin-top: 300px;
+  text-align: center;
+
+}
+
+
+
+.favoritedImg > img{
+  width: 200px;
+}
